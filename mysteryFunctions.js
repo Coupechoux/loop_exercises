@@ -33,9 +33,7 @@ function lol(a,b) {
 function wolverine(a,b) {
 	let result=0;
 	for(let i=0; i<a; i++) {
-		for(let j=0; j<b; j++) {
-			result++;
-		}
+		result += b;
 	}
 	return result;
 }
@@ -61,32 +59,32 @@ function bob(a,b,c) {
 }
 
 function calcul(a) {
-	let result=1;
+	let aaa=1;
 	for(let i=2; i<=a; i++) {
-		result *= i;
+		aaa *= i;
 	}
-	return result;
+	return aaa;
 }
 
 function python(a) {
-	let result;
+	let monResultat;
 	if(a<2) {
-		result = 1;
+		monResultat = 1;
 	} else {
-		result = a*python(a-1);
+		monResultat = a*python(a-1);
 	}
-	return result;
+	return monResultat;
 }
 
 function erogahtyp(a) {
-	let result;
+	let x;
 	if(a%2 == 0) {
-		result = a/2;
+		x = a/2;
 	}
 	else {
-		result = 3*a+1;
+		x = 3*a+1;
 	}
-	return result;
+	return x;
 }
 
 function pythagore(a,b) {
@@ -98,22 +96,22 @@ function pythagore(a,b) {
 }
 
 function aceeilnrtt(a) {
-	let result = 0;
+	let tluser = 0;
 	let v = a;
 	while(v != 1) {
 		v = erogahtyp(v);
-		result++;
+		tluser++;
 	}
-	return result;
+	return tluser;
 }
 
 function micmath(a,b) {
-	let result=0;
+	let c=0;
 	while(a>=b) {
 		a/=b;
-		result++;
+		c++;
 	}
-	return result;
+	return c;
 }
 
 function stylo(a,b) {
@@ -146,15 +144,15 @@ function nenio(a) {
 	return result;
 }
 
-function carapuce_samourai(a) {
-	let result = 1;
+function carapuceSamourai(a) {
+	let tortank = 1;
 	for(let i=0; i<a; i++) {
-		result = 1-result;
+		tortank = 1-tortank;
 	}
-	return result;
+	return tortank;
 }
 
-function bouteille_d_eau(a) {
+function bouteilleDEau(a) {
 	let result;
 	if(a<0) {
 		result=0;
@@ -173,7 +171,7 @@ function bouteille_d_eau(a) {
 function spiderman(a) {
 	let result = 1;
 	for(let i=0; i<a; i++) {
-		result = bouteille_d_eau(result);
+		result = bouteilleDEau(result);
 	}
 	return result;
 }
@@ -185,7 +183,6 @@ function az(a) {
 			result++;
 		}
 	}
-	
 	return result;
 }
 
@@ -259,6 +256,7 @@ function gh(a,b) {
 function jk(a,b) {
 	return a|b;
 }
+
 
 function lm(a,b) {
 	return a^b;
