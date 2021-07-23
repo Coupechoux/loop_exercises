@@ -33,7 +33,9 @@ function lol(a,b) {
 function wolverine(a,b) {
 	let result=0;
 	for(let i=0; i<a; i++) {
-		result += b;
+		for(let j=0; j<b; j++) {
+			result++;
+		}
 	}
 	return result;
 }
